@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{RESQUEST_FILENAME} !-r
+RewriteCond %{RESQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index2.php [NC, L, QSA]
